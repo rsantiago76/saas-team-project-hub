@@ -1,12 +1,10 @@
-# SaaS Team Project Hub (Amplify Hosting build-fix)
+# SaaS Team Project Hub
 
-## Why your Amplify build failed
-Next.js was type-checking `amplify/**` backend files and couldn't resolve `@aws-amplify/backend`.
-This repo fixes it by adding a root `tsconfig.json` that EXCLUDES `amplify/**` from the Next build.
+Amplify Gen 2 + Next.js SaaS starter.
 
-## Deploy
-Push to GitHub and connect in Amplify Hosting.
+This ZIP:
+- Fixes Amplify build errors
+- Excludes backend TS from Next build
+- Includes workspace UI scaffold
 
-## Local dev
-npm install
-npm run dev
+Deploy via AWS Amplify Hosting.

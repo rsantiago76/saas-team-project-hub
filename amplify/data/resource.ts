@@ -4,8 +4,7 @@ const schema = a.schema({
   Workspace: a.model({
     name: a.string().required(),
     slug: a.string().required(),
-    ownerSub: a.string().required(),
-  }).authorization((allow) => [allow.authenticated().to(["create","read","update","delete"])]),
+  }).authorization((allow) => [allow.authenticated()]),
 });
 
 export const data = defineData({

@@ -13,6 +13,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "app/**/*", "components/**/*", "lib/**/*", "*.ts", "*.tsx"],
-  "exclude": ["node_modules", "amplify", "packages", "apps", "**/*.test.*", "**/*.spec.*"]
+  "include": ["next-env.d.ts", "app/**/*"],
+  "exclude": ["node_modules", "amplify", "packages", "apps"]
 }
