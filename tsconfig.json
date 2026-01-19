@@ -1,11 +1,18 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "lib": ["dom", "esnext"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
-    "jsx": "preserve"
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
   },
-  "include": ["app/**/*", "lib/**/*"],
-  "exclude": ["amplify","node_modules"]
+  "include": ["next-env.d.ts", "app/**/*", "lib/**/*"],
+  "exclude": ["node_modules", "amplify"]
 }
