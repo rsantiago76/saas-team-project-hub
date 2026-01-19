@@ -1,7 +1,9 @@
 # SaaS Team Project Hub (Amplify)
 
-Fixes Amplify build error: `Can't resolve '@/amplify_outputs.json'`
+Fixes Amplify compile error pointing at `app/providers.tsx` by:
+- Including a placeholder `amplify_outputs.json`
+- Importing it with a RELATIVE path (no @/* alias required)
 
-This repo includes a placeholder `amplify_outputs.json` so Next.js can compile.
-When you attach an Amplify Gen 2 backend, replace it with the generated real outputs.
-
+Next step after green:
+- Attach Amplify Gen 2 backend (Auth + Data)
+- Replace placeholder outputs with generated outputs

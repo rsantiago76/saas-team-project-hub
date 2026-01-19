@@ -4,7 +4,8 @@ import { Amplify } from "aws-amplify";
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 
-import outputs from "@/amplify_outputs.json";
+// ✅ RELATIVE import (avoids @/* alias issues in Amplify builds)
+import outputs from "../amplify_outputs.json";
 
 try {
   if (outputs && Object.keys(outputs as any).length > 0) {

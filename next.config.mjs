@@ -1,2 +1,4 @@
-const nextConfig = { eslint:{ignoreDuringBuilds:true} };
+const nextConfig = {
+  eslint: { ignoreDuringBuilds: true }
+};
 export default nextConfig;
