@@ -1,5 +1,7 @@
 import { Providers } from "./providers";
 
+export const metadata = { title: "SaaS Team Project Hub" };
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

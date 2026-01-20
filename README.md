@@ -1,9 +1,12 @@
-# SaaS Team Project Hub (Amplify)
+# SaaS Team Project Hub (Amplify Gen 2)
 
-Fixes Amplify compile error pointing at `app/providers.tsx` by:
-- Including a placeholder `amplify_outputs.json`
-- Importing it with a RELATIVE path (no @/* alias required)
+Includes:
+- Auth (email + password) via Amplify Authenticator
+- Username display: `UserProfile.displayName`
+- Workspaces: create + auto OWNER membership
+- Invites: create invite (copy link) + accept flow
+- Projects → Tasks → Comments: basic UI
 
-Next step after green:
-- Attach Amplify Gen 2 backend (Auth + Data)
-- Replace placeholder outputs with generated outputs
+Build stability:
+- `amplify_outputs.json` is committed as `{}` so the Next build passes before an Amplify backend env is attached.
+- Once you create/attach the Amplify backend, Amplify will generate real outputs and Data will work.
